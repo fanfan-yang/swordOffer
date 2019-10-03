@@ -5,7 +5,7 @@ public class Solution {
     public static boolean find(int[][] array, int target){
 
         //Forbidden null array and empty array
-        if(array == null || array.length == 0){
+        if(array == null || array.length == 0 || array[0].length == 0){
             return false;
         }
 
