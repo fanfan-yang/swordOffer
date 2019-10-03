@@ -1,6 +1,8 @@
 package com.company.offer5_replaceSpace;
 
-
+/**
+ * Replace the Blanks in the inputString with "%20"
+ */
 
 public class Solution0 {
 
@@ -28,6 +30,7 @@ public class Solution0 {
             if(p1 == ' ') {
                 str.replace(p2-2, p2, replace);
                 p2 -= 3;
+                p1--;
             }
             else {
                 str.setCharAt(p2--, str.charAt(p1--));
