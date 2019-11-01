@@ -16,10 +16,8 @@ public class Solution1 {
 
         ArrayList<Integer> ret = new ArrayList<Integer>();
 
-        if (listNode.next != null) {
-            printListFromTailToHead(listNode.next);
-        }
-        else {
+        if (listNode != null) {
+            ret.addAll(printListFromTailToHead(listNode.next));
             ret.add(listNode.val);
         }
         return ret;
