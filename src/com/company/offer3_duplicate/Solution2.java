@@ -49,7 +49,14 @@ public class Solution2 {
 
             // End Condition
             if(end == start){
-                return start;
+                // Return true, only if (count > 1) by the end of the loop!!!
+                if(count > 1){
+                    return start;
+                }
+                else {
+                    break;
+                }
+
             }
         }
 
