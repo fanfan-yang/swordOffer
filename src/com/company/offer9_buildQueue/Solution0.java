@@ -2,7 +2,7 @@ package com.company.offer9_buildQueue;
 
 import java.util.Stack;
 
-public class buildQueue {
+public class Solution0 {
 
     private Stack<Integer> stack1 = new Stack<Integer>();
     private Stack<Integer> stack2 = new Stack<Integer>();
