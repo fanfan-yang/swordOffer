@@ -12,8 +12,13 @@ public class Solution0 {
             return pNode;
         }
 
-        else if (pNode.parent != null){
-            return pNode.parent.parent;
+        else {
+            while (pNode.parent != null) {
+                if (pNode == pNode.parent.left) {
+                    return pNode.parent;
+                }
+                pNode = pNode.parent;
+            }
         }
 
         return null;
